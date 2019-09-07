@@ -1,0 +1,61 @@
+package com.quizapp.Adapter;
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.quizapp.Model.AnswerModel;
+import com.quizapp.Model.QuestionModel;
+import com.quizapp.R;
+
+import java.util.ArrayList;
+
+public class AnswerRecylerViewAdapter extends RecyclerView.Adapter<AnswerRecylerViewAdapter.ViewHolder> {
+    private Context context;
+    private ArrayList<AnswerModel> answerModelArrayList = new ArrayList<>();
+
+    public AnswerRecylerViewAdapter(Context context, ArrayList<AnswerModel> answerModelArrayList) {
+        this.context = context;
+        this.answerModelArrayList = answerModelArrayList;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+        View v = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_answer, parent, false);
+
+        AnswerRecylerViewAdapter.ViewHolder vh = new AnswerRecylerViewAdapter.ViewHolder(v);
+
+        return vh;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+
+        viewHolder.answerText.setText(answerModelArrayList.get(i).getAnswer());
+        viewHolder.questionText.setText(answerModelArrayList.get(i).getId() + "." + answerModelArrayList.get(i).getQuestion());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return answerModelArrayList.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView questionText, answerText;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            questionText = itemView.findViewById(R.id.questionText);
+            answerText = itemView.findViewById(R.id.answerText);
+
+        }
+    }
+}
