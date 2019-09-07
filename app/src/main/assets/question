@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "question": "Which is a valid keyword in java?",
+    "optionA": "Interface",
+    "optionB": "String",
+    "optionC": "Float",
+    "optionD": "Unsigned"
+  },
+  {
+    "id": 2,
+    "question": "Which is a reserved word in the Java programming language?",
+    "optionA": "Method",
+    "optionB": "Native",
+    "optionC": "Subclasses",
+    "optionD": "Array"
+  },
+  {
+    "id": 3,
+    "question": "Which is the valid declarations within an interface definition?",
+    "optionA": "public double methoda()",
+    "optionB": "public final double methoda()",
+    "optionC": "static void methoda(double d1)",
+    "optionD": "protected void methoda(double d1)"
+  },
+  {
+    "id": 4,
+    "question": "Which one is a valid declaration of a boolean?",
+    "optionA": "boolean b1 = 0",
+    "optionB": "boolean b2 = 'false'",
+    "optionC": "boolean b3 = false",
+    "optionD": "boolean b4 = Boolean.false()"
+  },
+  {
+    "id": 5,
+    "question": "Which is a valid declarations of a String?",
+    "optionA": "String s1 = null",
+    "optionB": "String s2 = 'null'",
+    "optionC": "String s3 = (String) 'abc'",
+    "optionD": "String s4 = (String) '\ufeed'"
+  },
+  {
+    "id": 6,
+    "question": "What is the numerical range of a char?",
+    "optionA": "-128 to 127",
+    "optionB": "-(215) to (215) - 1",
+    "optionC": "0 to 32767",
+    "optionD": "0 to 65535"
+  },
+  {
+    "id": 7,
+    "question": "What is the value of 'd' after this line of code has been executed?",
+    "optionA": "2",
+    "optionB": "3",
+    "optionC": "2.5",
+    "optionD": "4"
+  }
+
+]
