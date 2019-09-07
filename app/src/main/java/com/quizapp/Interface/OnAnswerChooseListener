@@ -1,0 +1,13 @@
+package com.quizapp.Interface;
+
+import com.quizapp.Model.QuestionModel;
+
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+public interface OnAnswerChooseListener {
+
+    void OnSelected( String option,Integer id,String question);
+
+}
